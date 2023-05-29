@@ -1,0 +1,10 @@
+package tutorial2;
+import java.util.ArrayList;
+
+public class Main {
+	Student bill = new Student("bill");
+	Student tom = new Student("tom"); 
+	
+	System.out.println(tim);
+
+}

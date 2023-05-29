@@ -1,0 +1,16 @@
+package Part3;
+
+public class OverloadedConstructors {
+	public static void main(String[] args) {
+		
+		//overloaded constructors
+		
+		Pizza pizza = new Pizza("thick crust", "tomato", "mozarella", "pepperoni");
+		
+		System.out.println(pizza.bread);
+		
+		
+		
+	}
+
+}

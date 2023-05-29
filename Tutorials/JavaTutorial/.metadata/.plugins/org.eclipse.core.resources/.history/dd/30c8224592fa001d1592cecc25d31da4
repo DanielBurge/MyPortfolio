@@ -1,0 +1,9 @@
+package partfour;
+
+public class ObjectPassing {
+	public static void main(String[] args) {
+		
+		
+	}
+
+}

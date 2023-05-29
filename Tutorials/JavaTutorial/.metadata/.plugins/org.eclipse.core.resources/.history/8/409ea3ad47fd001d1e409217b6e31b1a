@@ -1,0 +1,9 @@
+package generics;
+
+public class Main {
+	public static void main(String[]args) {
+		
+		MyGenericClass generic = new MyGenericClass(1,2);
+	}
+
+}

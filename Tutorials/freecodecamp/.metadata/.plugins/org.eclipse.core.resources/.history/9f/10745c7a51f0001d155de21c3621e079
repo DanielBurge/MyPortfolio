@@ -1,0 +1,14 @@
+package tutorial;
+import java.util.ArrayList;
+import java.util.Map;
+import java.util.HashMap;
+
+public class Maps {
+	public static void main(String[] args) {
+		Map m = new HashMap();
+		m.put("tim", 5);
+		
+		System.out.println(m);
+	}
+
+}

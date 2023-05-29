@@ -1,0 +1,11 @@
+package tutorial3;
+//don't define the methods in interface
+// variables must be final
+public interface Vehicle {
+	final int gears = 5;
+	
+	
+	void changeGear(int a);
+	void speedUp(int a);
+	void slowDown(int a);
+}

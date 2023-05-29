@@ -1,0 +1,14 @@
+package parttwo;
+
+public class Constructors {
+	public static void main(String[] args) {
+		
+		// constructor = special method that is called when an object is instantiated (created)
+	Human human = new Human("Rick", 23,70);
+	
+	
+
+	
+	}
+
+}

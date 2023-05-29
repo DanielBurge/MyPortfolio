@@ -1,0 +1,12 @@
+
+public class PalindromeNumber {
+	
+	public static void main(String[] args) {
+		
+	int x = 121;
+	int z = x %10;
+	System.out.println(z);
+	
+	}
+
+}

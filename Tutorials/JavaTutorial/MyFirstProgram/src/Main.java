@@ -1,0 +1,30 @@
+
+public class Main {
+	public static void main(String[] args) {
+		System.out.println("\tI love pizza\n");
+		System.out.println("\"It's really good!\"");
+		
+		//This is a comment
+		int x; // declaration
+		
+		x =123; // assignment
+		int x1 =123; //  Initialization
+		System.out.println("My number is: " + x1);
+		
+		//swap two variables\
+		
+		String a = "water";
+		String b  = "Kool-Aid";
+		String temp;
+		
+		temp = a;
+		a=b;
+		b=temp;
+		
+		System.out.println("a: "  +a);
+		System.out.println("b: " + b);
+		
+		
+	}
+
+}

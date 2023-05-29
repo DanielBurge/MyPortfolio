@@ -1,0 +1,15 @@
+package tutorial;
+import java.util.Scanner;
+
+public class Conditions {
+	public static void main(String[] args) {
+		int x = 6;
+		int y = 7;
+		int z = 10;
+		// > < == >= <= !=(not equal)
+		boolean compare = x < y;
+		
+		System.out.println(compare);
+	}
+
+}

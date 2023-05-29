@@ -1,0 +1,17 @@
+package parttwo;
+
+public class Methods {
+	
+	public static void main(String[] args) {
+		
+		// method = a block of code that is executed whenever it is called upon
+		
+		String name = "Bro";
+		hello(name);
+		}
+	
+	static void hello(String n) {
+		System.out.println("Hello" +  n);
+	}
+
+}

@@ -1,0 +1,6 @@
+package tutorial3;
+//don't define the methods in interface
+
+public interface Vehicle {
+	void speedUp(int a);
+}

@@ -1,0 +1,20 @@
+package tutorial1;
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Objects {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		//sc.next();
+		tim();
+		tim("Hi!");
+	}
+	// void no return 
+	public static void tim() {
+		System.out.println("Tim!");
+	}
+	public static void tim(String str) {
+		System.out.println(str);
+	}
+
+}

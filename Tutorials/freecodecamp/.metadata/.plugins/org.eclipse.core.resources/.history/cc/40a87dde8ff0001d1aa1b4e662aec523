@@ -1,0 +1,13 @@
+package tutorial2;
+import java.util.ArrayList;
+public class Student {
+	public static void main(String[] args) {
+	
+		Student joe = new Student("joe");
+		Student bill = new Student("joe");
+		Student tim = new Student("Tim");
+		
+		System.out.println(joe==bill);
+	}
+
+}

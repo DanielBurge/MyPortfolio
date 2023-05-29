@@ -1,0 +1,11 @@
+package tutorial;
+
+public class Main1 {
+	public static void main(String[] args) {
+	int x = 5;
+	int y = 7;
+	int z  = 56;
+	int sum = x  - y - z;
+	System.out.println(sum);
+	}
+}

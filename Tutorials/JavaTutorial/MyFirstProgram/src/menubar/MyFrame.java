@@ -1,0 +1,87 @@
+package menubar;
+
+import java.awt.FlowLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.KeyEvent;
+
+import javax.swing.ImageIcon;
+import javax.swing.JFrame;
+import javax.swing.JMenuBar;
+import javax.swing.JMenu;
+import javax.swing.JMenuItem;
+public class MyFrame  extends JFrame implements ActionListener{
+		JMenuBar menuBar;
+		JMenu fileMenu;
+		JMenu editMenu;
+		JMenu helpMenu;
+		JMenuItem loadMenu ; 
+		JMenuItem saveMenu ;
+		JMenuItem exitMenu;
+		ImageIcon loadIcon;
+		ImageIcon saveIcon;
+		ImageIcon exitIcon;
+		
+	MyFrame(){
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		this.setSize(500,500);
+		this.setLayout(new FlowLayout());
+		
+		loadIcon = new ImageIcon("load.png");
+		saveIcon = new ImageIcon("save.png");//import img to work
+		exitIcon = new ImageIcon("exit.png");
+		
+		
+		JMenuBar menuBar = new JMenuBar();
+		JMenu fileMenu = new JMenu("File");
+		JMenu editMenu = new JMenu("Edit");
+		JMenu helpMenu = new JMenu("Help");
+		
+		JMenuItem loadMenu = new JMenuItem("Load");
+		JMenuItem saveMenu = new JMenuItem("Save");
+		JMenuItem exitMenu = new JMenuItem("Exit");
+		
+		loadMenu.setIcon(loadIcon);
+		saveMenu.setIcon(saveIcon);
+		exitMenu.setIcon(exitIcon);
+		
+		loadMenu.setMnemonic(KeyEvent.VK_F);
+		saveMenu.setMnemonic(KeyEvent.VK_E);
+		exitMenu.setMnemonic(KeyEvent.VK_H);
+		fileMenu.setMnemonic(KeyEvent.VK_L);
+		editMenu.setMnemonic(KeyEvent.VK_S);
+		helpMenu.setMnemonic(KeyEvent.VK_E);
+		
+		fileMenu.add(loadMenu);
+		fileMenu.add(saveMenu);
+		fileMenu.add(exitMenu);
+		
+		
+		menuBar.add(fileMenu);
+		menuBar.add(editMenu);
+		menuBar.add(helpMenu);
+		
+		this.setJMenuBar(menuBar);
+		this.setVisible(true);
+		
+	}
+	
+	
+	
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		if(e.getSource()== loadMenu) {
+			System.out.println("beep boop you loaded an item");
+			
+		}
+		if(e.getSource()== saveMenu) {
+			System.out.println("beep boop you loaded an item");
+			
+		}
+		if(e.getSource()== helpMenu) {
+			System.out.println("beep boop you loaded an item");
+			
+		}
+	}
+
+}

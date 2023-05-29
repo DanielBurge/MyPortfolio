@@ -1,0 +1,9 @@
+package tutorial1;
+
+public class Main {
+	public static void main(String[] args) {
+		Dog Fendi = new Dog("Fendi",3);
+		Fendi.speak();
+	}
+
+}

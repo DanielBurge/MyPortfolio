@@ -1,0 +1,14 @@
+package generics;
+
+public class MyDoubleClass {
+
+	Double x;
+
+	public MyDoubleClass(Double i) {
+		this.x = x;
+	}
+	
+	public Double getValue() {
+		return x;
+	}
+}

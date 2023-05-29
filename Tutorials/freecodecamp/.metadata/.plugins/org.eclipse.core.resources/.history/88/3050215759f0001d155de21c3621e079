@@ -1,0 +1,14 @@
+package tutorial1;
+
+public class Main {
+	public static void main(String[] args) {
+		Dog Fendi = new Dog("Fendi",3);
+		Fendi.speak();
+	int x = Fendi.getAge();
+	System.out.println(x);
+	Fendi.setAge(10);
+	Fendi.speak();
+	
+	}
+
+}

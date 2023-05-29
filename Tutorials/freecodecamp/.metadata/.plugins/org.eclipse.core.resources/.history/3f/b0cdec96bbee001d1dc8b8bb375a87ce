@@ -1,0 +1,7 @@
+package tutorial;
+
+public class Main1 {
+	int x;
+	System.out.println(x);
+
+}

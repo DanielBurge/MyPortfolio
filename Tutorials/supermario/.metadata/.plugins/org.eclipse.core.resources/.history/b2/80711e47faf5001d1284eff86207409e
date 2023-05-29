@@ -1,0 +1,5 @@
+package com.tutorial.mario.input;
+
+public class KeyInput {
+
+}

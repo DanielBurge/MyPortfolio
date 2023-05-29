@@ -1,0 +1,11 @@
+package tutorial;
+
+public class Main1 {
+	public static void main(String[] args) {
+	int x = 5;
+	double y = 7;
+	double z  = 57;
+	double u =  z/y;
+	System.out.println(u);
+	}
+}

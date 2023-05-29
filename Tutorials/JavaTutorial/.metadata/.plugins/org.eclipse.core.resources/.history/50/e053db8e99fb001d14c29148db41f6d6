@@ -1,0 +1,26 @@
+package labels;
+import javax.swing.JLabel;
+import javax.swing.JFrame;
+import javax.swing.ImageIcon;
+
+public class Main {
+	public static void main(String[] args) {
+		
+		ImageIcon image = new ImageIcon("boy_down_1.png");
+		
+		
+		JLabel label = new JLabel(); // create a label
+		label.setText("Bro, do you even code?");
+		label.setIcon(image);
+		label.setHorizontalTextPosition(JLabel.CENTER);
+		label.setVerticalTextPosition(JLabel.TOP);
+		
+		
+		JFrame frame = new JFrame();
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.setSize(500,500);
+		frame.setVisible(true);
+		frame.add(label);
+	}
+
+}

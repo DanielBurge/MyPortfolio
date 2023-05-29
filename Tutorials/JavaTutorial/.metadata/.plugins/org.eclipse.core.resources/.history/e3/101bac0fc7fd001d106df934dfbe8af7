@@ -1,0 +1,12 @@
+package generics;
+
+public class MyGeneric <Thing> {
+	Thing x;
+	
+	MyGeneric(Thing x){
+		this.x = x;
+	}
+	public Thing getValue() {
+		return x;
+	}
+}

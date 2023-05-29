@@ -1,0 +1,8 @@
+package tictactoe;
+
+public class Snippet {
+	public static void main(String[] args) {
+		sheet = new SpriteSheet("\spritesheet.png");
+	}
+}
+
