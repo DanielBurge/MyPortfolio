@@ -18,7 +18,7 @@ public class Player extends Entity {
 	
 	public final int screenX;// indicate where we draw the player on map
 	public final int screenY;//
-	int hasKey = 0;
+	public int hasKey = 0;
 	
 	public Player(GamePanel gp, KeyHandler keyH) {
 		this.gp = gp;
@@ -119,18 +119,33 @@ public class Player extends Entity {
 				
 			switch (objectName) {
 			case "Key":
+				gp.playSE(1);
 				hasKey++;
 				gp.obj[i] = null;
-				System.out.println("Key:" + hasKey );
+				gp.ui.showMessage("Key was aquired!!!");
 				break;
 			case "Door":
 				if(hasKey > 0) {
+					gp.playSE(3);
 				gp.obj[i] = null;
 						hasKey--;
+						gp.ui.showMessage("Door opened, YEZZIR!");
+				}else {
+					gp.ui.showMessage("You need a key bruh!");
 				}
-				System.out.println("Key:" + hasKey );
-				break;
 				
+				break;
+			case "Boots":
+				gp.playSE(2);
+				speed+=2;
+				gp.obj[i] = null;
+				gp.ui.showMessage("Speeeed booost!");
+				break;
+			case "Chest":
+				gp.ui.gameFinished = true;
+				gp.stopMusic();
+				gp.playSE(4);
+				break;
 			
 			}}
 		}
