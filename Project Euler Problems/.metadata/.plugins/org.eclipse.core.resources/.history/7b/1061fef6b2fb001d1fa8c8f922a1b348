@@ -1,0 +1,20 @@
+
+public class SumSquareDifferences {
+	public static void main(String[] args) {
+		int x = sumSquareOfNaturalNumbers(2);
+		System.out.println(x );
+		
+	}
+	public static int sumSquareOfNaturalNumbers(int n) {
+		int a = 0;
+		int b= 0;
+		int c= (a*a)+ (b*b);
+		
+		for(int i= 0; i<= c;i++) {
+			System.out.println(c);
+		}
+		return c;
+		
+	}
+
+}
