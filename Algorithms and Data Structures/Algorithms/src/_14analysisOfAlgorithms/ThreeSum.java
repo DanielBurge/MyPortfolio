@@ -1,5 +1,6 @@
 package _14analysisOfAlgorithms;
 // Given N distinct integers, how many triples sum to exactly zero
+// brute force algorithm
 public class ThreeSum {
 	public static int count(int[] a) {
 		int N = a.length;
@@ -12,14 +13,14 @@ public class ThreeSum {
 		return count;
 	}
 	public static void main(String[] args) {
-	int[] a = {30,-40,10};//outputs 1
+	int[] a = {30,-40,10,-5,30,40,-40,35,-30,-10,-35};//outputs 7 possible triple sums 
 	int[] b = {30,-20,-10};//outputs 1
 	int[] c = {10,-10,20,-20}; //outputs 0
-	int[] d = {-10,10}; // outputs 0
+	
 		System.out.println(count(a));
-		System.out.println(count(b));
-		System.out.println(count(c));
-		System.out.println(count(d));
+		//System.out.println(count(b));
+		//System.out.println(count(c));
+		
 	}
 
 }
